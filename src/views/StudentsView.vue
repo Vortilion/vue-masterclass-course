@@ -1,5 +1,9 @@
 <template>
-  <h1 class="text-6xl font-bold">Students</h1>
+  <header-container>
+    <template #title>
+      <h1 class="w-full text-4xl font-normal">Students</h1>
+    </template>
+  </header-container>
 </template>
 
 <script>

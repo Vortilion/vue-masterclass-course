@@ -1,32 +1,15 @@
-const axios = require("axios");
+// Arrays - order
+// Objects - association
+// Set - uniqueness
 
-const url = "http://localhost:3000/jobs";
+const numbers = new Set();
+numbers.add(5);
+numbers.add(10);
+numbers.add(15);
 
-const fetchJobsV1 = () => {
-  axios.get(url).then((response) => {
-    console.debug(response.data);
-  });
-};
+numbers.add(5);
+numbers.add(15);
 
-// fetchJobsV1();
+numbers.add(25);
 
-const fetchJobsV2 = async () => {
-  const response = await axios.get(url);
-  console.debug(response.data);
-};
-
-// fetchJobsV2();
-
-const sushi = [
-  "Tuna",
-  "Salmon",
-  "Yellowtail",
-  "Eel",
-  "Shrimp",
-  "Octopus",
-  "Uni",
-];
-
-console.debug(sushi.slice());
-console.debug(sushi.slice(2)); // with left boundary, inclusive
-console.debug(sushi.slice(2, 4)); // with right boundary, exclusive
+console.log(numbers);
