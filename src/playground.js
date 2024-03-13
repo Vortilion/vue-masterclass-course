@@ -1,15 +1,20 @@
-// Arrays - order
-// Objects - association
-// Set - uniqueness
+const numbers = [1, 3, 5, 7, 2, 9, 11, 6];
 
-const numbers = new Set();
-numbers.add(5);
-numbers.add(10);
-numbers.add(15);
+console.log(numbers.filter((number) => number > 6));
 
-numbers.add(5);
-numbers.add(15);
+const jobs = [
+  {
+    title: "Angular developer",
+    organization: "Microsoft",
+  },
+  {
+    title: "Programmer",
+    organization: "Google",
+  },
+  {
+    title: "Developer",
+    organization: "Microsoft",
+  },
+];
 
-numbers.add(25);
-
-console.log(numbers);
+console.log(jobs.filter((job) => job.organization === "Microsoft"));
